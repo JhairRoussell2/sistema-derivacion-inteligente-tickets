@@ -7,26 +7,23 @@
 
 ## 📸 Capturas del Sistema
 
-> **📌 Instrucciones para el equipo:**  
-> Coloca tus capturas de pantalla en la carpeta `IMG/` del proyecto y nómbralas `img1.png`, `img2.png`, etc.  
-> A continuación se indica qué captura va en cada espacio:
-
-| Imagen | Qué capturar |
-|---|---|
-| `img1.png` | Swagger UI en `http://localhost:8000/docs` mostrando todos los endpoints |
-| `img2.png` | n8n con el workflow activo y sus 6 nodos visibles |
-| `img3.png` | Resultado de `POST /procesar-csv` (respuesta JSON con tickets procesados) |
-| `img4.png` | Archivo CSV de reporte abierto en Excel con columnas de mesa asignada |
-| `img5.png` | Vista de ejecuciones en n8n (Executions tab) mostrando Succeeded |
-
+> mostrando todos los endpoints.
 ![Swagger UI - Endpoints disponibles](IMG/img1.png)
 
+
+> n8n con el workflow activo y sus 6 nodos visibles
 ![Workflow en n8n - 6 nodos activos](IMG/img2.png)
 
+
+> Resultado de `POST /procesar-csv` (respuesta JSON con tickets procesados)
 ![Resultado del procesamiento CSV](IMG/img3.png)
 
+
+> Archivo CSV de reporte abierto en Excel con columnas de mesa asignada
 ![Reporte de derivación en Excel](IMG/img4.png)
 
+
+> Vista de ejecuciones en n8n (Executions tab) mostrando Succeeded
 ![Ejecuciones exitosas en n8n](IMG/img5.png)
 
 ---
@@ -43,7 +40,7 @@ Este sistema automatiza la derivación de tickets de soporte técnico a las mesa
 
 ### 🏢 Sobre el Dataset
 
-Los tickets utilizados para desarrollar y validar este sistema **provienen de datos reales de exportaciones JIRA** de una empresa de seguros peruana. Dichos datos fueron **modificados considerablemente** antes de su uso: se eliminaron nombres de personas, correos electrónicos, datos personales de asegurados, montos y cualquier información que pudiera identificar a clientes, trabajadores o situaciones reales de la empresa. Los datos resultantes se emplean únicamente con fines académicos para validar el comportamiento del sistema de derivación.
+Los tickets utilizados para desarrollar y validar este sistema **provienen de datos reales de exportaciones JIRA** de una empresa de seguros peruana. Dichos datos fueron **modificados considerablemente** antes de su uso: se eliminaron multiples datos y se priorizó la estructura del documento como se descarga en el Jira. Los datos resultantes se emplean únicamente con fines académicos para validar el comportamiento del sistema de derivación.
 
 ---
 
@@ -92,7 +89,7 @@ Los tickets utilizados para desarrollar y validar este sistema **provienen de da
 📊 Reporte CSV en data/outputs/reporte_FECHA.csv
 ```
 
-### Mesas de Soporte (Protecta Seguros — simuladas)
+### Mesas de Soporte 
 
 | Nivel | Mesa | Especialidad |
 |---|---|---|
@@ -279,13 +276,7 @@ Ver guía completa en [`docs/READ_VALIDACIONES.md`](docs/READ_VALIDACIONES.md)
 
 ## � Autor
 
-Proyecto desarrollado de forma independiente como iniciativa personal en el contexto del Curso de **Sistemas Inteligentes**, Febrero 2026.
-
----
-
-## ⚠️ Aviso sobre los Datos
-
-> Los archivos CSV utilizados para probar este sistema fueron exportados desde el sistema JIRA de una empresa peruana de seguros. Antes de su uso, los datos fueron **anonimizados y modificados sustancialmente**: se eliminaron nombres, correos, montos, datos de pólizas y cualquier información que permita identificar personas o situaciones reales. Su uso es estrictamente personal y académico.
+Proyecto desarrollado de forma independiente por Jhair Roussell Melendez Blas como iniciativa personal en el contexto del Curso de **Sistemas Inteligentes**, Febrero 2026.
 
 ---
 
